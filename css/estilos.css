@@ -1,14 +1,13 @@
-/* Global*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
+
 /* Mobile Styles */
-@media only screen and (min-width: 360px) {
+@media only screen and (max-width: 400px) {
     body {
-        width: 100%;
-        height: 500px;
         background-color: #F09A9D;
         /* Red */
     }
@@ -17,7 +16,7 @@
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     body {
-        background-color: #14010165;
+        background-color: #F5CF8E;
         /* Yellow */
     }
 }
@@ -26,7 +25,7 @@
 
 @media only screen and (min-width: 961px) {
     body {
-        background-color: #474d75;
+        background-color: #B2D6FF;
         /* Blue */
     }
 }
@@ -36,47 +35,49 @@
 }
 
 header nav div ul li {
-    display: inline-block;
-    max-width: 100%;
+    
+    display: flex;
+    height: 30px;
+    max-width: 10px;
+    overflow: auto;
+    text-decoration: none;
 
 }
-
 
 .secciones {
     padding: 1 %;
     text-decoration: none
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size: 100%;
+}
+
 
 div {
-    margin: 2px;
-    background:#a9a9b0;
-   }
- /* nav */
- .color_de_fondo{
-    background-color: #1c11e2;
-    overflow: hidden;
-    display: block;
- }
+    margin: 2 px;
+    background: #a9a9b0;
+    border: 2px solid rgb(12, 11, 11);
+    overflow: auto;
+}
+
+.fondo_del_fondo {
+    width: 100%;
+    background: #09078f;
+}
+
 .logo_estudio {
-    max-width:100%;
-    position:relative;
+    max-width: 7rem;
+    max: height 7rem;
+    position: relative;
 
 }
 
-h1{
-    background-color: #060617;
-    color: #B2D6FF;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: oblique;
-    font-weight: 200;
-    
-}
-h2{
-    background-color: #F09A9D;
-    text-overflow: ellipsis;
-    text-align: justify;
-    top: 5px;
+.nav_bar {
+    padding: 4%;
+    text-decoration: none;
+
 }
 
 /* li */
@@ -85,15 +86,33 @@ li {
     margin: 40px;
     border: #060617;
     bottom: 20px;
+    text-decoration: none;
 }
- 
+
 .textos_header {
     display: flex;
 }
 
+.nuestros_servicios {
+    bottom: auto;
+    left: auto;
+    text-shadow: #878a85;
+    background: fixed;
+    margin: auto;
+
+}
+
+.nuestros_servicios>h2 {
+    width: 100%;
+    bottom: 2000px;
+    color: #878a85;
+    text-decoration: none;
+    text-align: justify;
+    background: #060617;
+
+}
 
 .foto_demora_sentencia {
-    max-width: 100%;
     padding: 30px 20px 10px 50px;
 
 }
@@ -130,15 +149,21 @@ li {
 }
 
 /* Header */
-header nav ul .secciones_menu {
+header {
     width: 100%;
-    height: 600px;
-    background-color: #060617;
-  }
+    height: 200px;
+    background: hsla(28, 19%, 40%, 0.423);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(237, 93%, 77%, 0.447), hsla(237, 53%, 55%, 0.35)), url(../imagenes/imagenparalaola.jpge.jpeg);
+    ;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(237, 93%, 77%, 0.447), hsla(237, 53%, 55%, 0.35)), url(../imagenes/imagenparalaola.jpge.jpeg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  
+}
+
 .secciones nav ul {
-    color: #9ab43c96;
+    color: #fff;
     font-weight: 300;
     text-decoration: none;
     margin-right: 30px;
@@ -157,6 +182,7 @@ header .textos_header {
     justify-content: center;
     flex-direction: column;
     text-align: justify;
+    text-decoration: none;
 }
 
 .textos_header h1 {
@@ -174,46 +200,13 @@ header .textos_header {
 
 .wave {
     bottom: 100px;
+    position: relative;
     bottom: 60px;
     width: 100%;
-    color: rgba(48, 13, 130, 0.422);
+    color: bisque;
 }
- /*Pseudoclases*/
- .secciones_menu li a {
-     text-decoration: none;
-     color: rgb(196, 22, 22);
-     font-size: 20px;
-     font: 200;
- }
 
- .secciones_menu li a:visited {
-     color: green;
- }
 
- .secciones_menu li a:hover {
-     color: red;
- }
-
- .secciones_menu li a:active {
-     color: orange;
-     font-style: oblique;
- }
-
- /*BEM*/
- .secciones--color {
-     color: orange;
- }
-
- h3:nth-child(11) {
-     background-color: #1b11e256;
- }
-
-  h3:nth-child(8) {
-      background-color: #1b11e256;
-  }
- h3:nth-child(5) {
-     background-color: #1b11e256;
- }
 /*About u */
 
 
@@ -319,6 +312,7 @@ footer div ul li {
 /*galeria*/
 .portafolio {
     background: #f2f2f2;
+    display: flex;
 }
 
 .galeria-port {
@@ -368,78 +362,19 @@ footer div ul li {
 .imagen_port:hover.hover-galeria {
     transform: scale(1);
 }
-.container {
-    display: grid;
-    min-width: 100%;
-    grid-template-columns: 100px auto 100px;
-    grid-template-rows: repeat(6,100px);
-    gap:1rem;
-    grid-template-areas: "box1 box1 box1" "box2 box3";
+.responsive-imag {
+ max-width: 100%;
+height: auto;   
 }
-.box-1{
-    grid-area: box1;
-    background-color: #1c11e2;
-}
-.box-2 {
-    grid-area: box2;
-    background-color: violet
+/*Pseudoelementos*/
+h3:nth-child(1) {
+    background-color: #1b11e256;
 }
 
-.box-3 {
-    grid-area: box3;
-    background-color: green
+h3:nth-child(3) {
+    background-color: #1b11e256;
 }
-@media only screen and (min-width: 768px) {
-    .container {
-        grid-template-columns: repeat(4, 1fr);
-    }
+
+h3:nth-child(5) {
+    background-color: #1b11e256;
 }
- .box-2 {
-     grid-row: 1 / 3;
-     grid-column: 1 / 3;
- }
-
- .box-1 {
-     grid-row: 1 / 2;
-     grid-column: 3 / 5;
- }
-
- .box-3 {
-     grid-column: 3 / 5;
-     grid-row: 2 / 3;
- }
- @media only screen and (min-width: 1024px) {
-     .container {
-         grid-template-columns: repeat(3, 1fr);
-     }
- }
- .box-1 {
-     grid-column: 1 / span 3;
-     grid-row: 1 / 2;
- }
-
- .box-2 {
-     grid-column: 1 / span 3;
-     grid-row: 2 / 3;
- }
-
- .box-3 {
-     grid-column: 1 / 3;
-     grid-row: 3 / 6;
- }
- h2{
-    background-color: #4d0686;
-    text-align: center;
-    font-size: larger;
-    font-style: italic;
- }
-  .descripcion{
-    display: block;
-    width: 100%;
-    height: 20px;
-}
-      .libro{
-    width: 500px;
-    height: 400px;
-      }
-      
