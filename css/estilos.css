@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
 }
 
 /* Mobile Styles */
@@ -22,7 +21,6 @@
 }
 
 /* Desktop Styles */
-
 @media only screen and (min-width: 961px) {
     body {
         background-color: #B2D6FF;
@@ -35,13 +33,11 @@
 }
 
 header nav div ul li {
-    
     display: flex;
     height: 30px;
     max-width: 10px;
     overflow: auto;
     text-decoration: none;
-
 }
 
 .secciones {
@@ -62,22 +58,15 @@ div {
     overflow: auto;
 }
 
-.fondo_del_fondo {
-    width: 100%;
-    background: #09078f;
-}
-
 .logo_estudio {
     max-width: 7rem;
     max: height 7rem;
     position: relative;
-
 }
 
 .nav_bar {
     padding: 4%;
     text-decoration: none;
-
 }
 
 /* li */
