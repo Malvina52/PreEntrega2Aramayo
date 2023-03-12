@@ -40,10 +40,6 @@ header nav div ul li {
     text-decoration: none;
 }
 
-.secciones {
-    padding: 1 %;
-    text-decoration: none
-}
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -76,10 +72,6 @@ li {
     border: #060617;
     bottom: 20px;
     text-decoration: none;
-}
-
-.textos_header {
-    display: flex;
 }
 
 .nuestros_servicios {
